@@ -1,4 +1,6 @@
+.DS_Store
 data
+traffic-signs-data
 .ipynb_checkpoints
 *.h5
 models
