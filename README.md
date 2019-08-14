@@ -9,9 +9,13 @@ I used the numpy library to calculate summary statistics of the traffic
 signs data set:
 
 Train shape:  (34799, 32, 32, 3)
+
 Number of training examples = 34799
+
 Number of testing examples = 12630
+
 Image data shape = (32, 32, 3)
+
 Number of classes = 43
 
 #### 2. Include an exploratory visualization of the dataset.
@@ -37,6 +41,7 @@ I originally used the normalization technique of centering by 126 and dividing b
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 My final model consisted of the following layers:
+
 
 | Layer         		|  Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -90,21 +95,27 @@ Finally, I added a Dropout layer after the flatten layer.  During training I use
 Here are German traffic signs that I found on the web:
 
 ![stop](https://raw.githubusercontent.com/NathanBWaters/CarND-Traffic-Sign-Classifier-Project/master/german_signs/sign10_stop_id_14.png)
+
 This stop sign should be straightforward for the model to predict.
 
 ![priority_road](https://raw.githubusercontent.com/NathanBWaters/CarND-Traffic-Sign-Classifier-Project/master/german_signs/sign2_priority_road_id_12.png)
+
 The fact that another sign is in the background could confuse the model because it's not expecting a circle for a priority sign.
 
 ![roadwork](https://raw.githubusercontent.com/NathanBWaters/CarND-Traffic-Sign-Classifier-Project/master/german_signs/sign4_roadwork_id_25.png)
+
 One concern about the above image is that the 30 speed limit is also in the background which could easily confuse the network
 
 ![turn right](https://raw.githubusercontent.com/NathanBWaters/CarND-Traffic-Sign-Classifier-Project/master/german_signs/sign_turn_right_id_33.png)
+
 Very straightforward
 
 ![priority_road](https://raw.githubusercontent.com/NathanBWaters/CarND-Traffic-Sign-Classifier-Project/master/german_signs/sign9_keep_right_id_38.png)
+
 This should be straightforward but the edges from the watermark might confuse the model.  Most likely those lines will be lost when the images is downsized to (32x32x1)
 
 ![caution](https://raw.githubusercontent.com/NathanBWaters/CarND-Traffic-Sign-Classifier-Project/master/german_signs/sign1_general_caution_id_18.png)
+
 The watermark might cause an extra difficulty.
 
 #### 2. Model's Predictions on New Signs
